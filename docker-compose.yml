@@ -1,0 +1,14 @@
+version: '3'
+services:
+  my-ubuntu-container:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - my-scripts-volume:/app/scripts
+      - ./local-scripts:/app/scripts
+    tty: true
+    stdin_open: true
+
+volumes:
+  my-scripts-volume:
