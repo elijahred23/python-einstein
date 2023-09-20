@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
-    vim \  # Add Vim installation here
+    vim \      
     && apt-get clean
 
 # Install any needed packages specified in requirements.txt
